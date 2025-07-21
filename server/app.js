@@ -24,3 +24,7 @@ app.listen(PORT,() => {
     console.log(`Server running at localhost on ${PORT}`);
 }
 )
+
+
+// 👇 Export the app as a handler for Vercel
+module.exports = app;
