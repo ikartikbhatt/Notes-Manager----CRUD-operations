@@ -6,6 +6,7 @@ const router = express.Router({ caseSensitive: true });
 // GET FILES LIST
 
 router.get("/getFiles", (req, res) => {
+  console.log('full request>>>.',req);
   utils.listFiles(req, res);
 });
 

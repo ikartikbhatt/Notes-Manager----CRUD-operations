@@ -4,6 +4,8 @@ const fs = require("fs");
 async function listFiles(req, res) {
   try {
     const data = req.body;
+    console.log('list files data',data);
+    
     const keys = Object.keys(data);
 
     if (!data || keys.length === 0) {

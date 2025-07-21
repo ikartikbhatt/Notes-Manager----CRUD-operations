@@ -16,9 +16,11 @@ app.use('/file', fileRoutes);
 
 
 
-//listen to server
-const PORT=5000;
+
+const PORT=5000;    //listen to server
+const HOST = ''; // 👈 replace with your desired IP address
+
 app.listen(PORT,() => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server running at localhost on ${PORT}`);
 }
 )
